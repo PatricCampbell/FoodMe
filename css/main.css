@@ -1,0 +1,49 @@
+ul {
+  list-style: none;
+}
+
+body {
+  height: 100%;
+}
+
+.searcher {
+  margin: 0 auto;
+  width: 800px;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.searcher h1, .searcher h3, .recipes h3 {
+  text-align: center;
+  margin: 0;
+}
+
+.searcher p {
+  width: 200px;
+  margin: 0;
+  border: 1px solid black;
+  padding: 3px;
+}
+
+.btn-area {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.recipes-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.recipe-item a {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
