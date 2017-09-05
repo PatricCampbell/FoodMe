@@ -3,7 +3,6 @@ $p(() => {
     const ingredient = $p('.ingredient').html();
     fetchRecipes(ingredient, null)
       .then(recipes => {
-      console.log(recipes);
       clearRecipes();
       recipes.hits.forEach(recipe => {
         makeRecipe(recipe.recipe);
@@ -15,7 +14,6 @@ $p(() => {
     const ingredient = $p('.ingredient').html();
     fetchRecipes(ingredient, 'vegan')
       .then(recipes => {
-      console.log(recipes);
       clearRecipes();
       recipes.hits.forEach(recipe => {
         makeRecipe(recipe.recipe);
@@ -27,7 +25,6 @@ $p(() => {
     const ingredient = $p('.ingredient').html();
     fetchRecipes(ingredient, 'veggy')
       .then(recipes => {
-      console.log(recipes);
       clearRecipes();
       recipes.hits.forEach(recipe => {
         makeRecipe(recipe.recipe);
@@ -39,7 +36,7 @@ $p(() => {
 const fetchRecipes = (ingredient, option) => {
   let baseURL = 'https://api.edamam.com/search?app_id=08ce8a34&app_key=43e119b120459c49cddad12e6027c1dc&q=';
   const randomRecipe = getRandomRecipeNumber();
-  debugger
+
   switch (option) {
     case null:
       baseURL = baseURL + ingredient + `&from=${randomRecipe}`;
