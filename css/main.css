@@ -55,10 +55,21 @@ button:hover {
   transform: scale(1.1);
 }
 
+.recipes {
+  margin: 3% auto 0 auto;
+  width: 90%;
+}
+
 .recipes-list {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  padding: 0;
+}
+
+.recipe-item {
+  width: 25%;
 }
 
 .recipe-item a {
@@ -67,4 +78,9 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-decoration: none;
+}
+
+.recipe-item a p {
+  color: black;
 }
